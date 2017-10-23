@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.appsbyolympia.olympiabardis.agecalculator.MainActivity">
+
+    <EditText
+        android:id="@+id/etBirth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Enter Your Birth Year"
+        android:textColor="@android:color/holo_red_dark"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Your Age : "
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etBirth"/>
+
+    <Button
+        android:id="@+id/btnGetAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:background="@color/colorAccent"
+        android:text="Get Age"
+        android:onClick="calculateAge"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@id/tvAge"
+        app:layout_constraintTop_toBottomOf="@id/tvAge"
+        tools:layout_editor_absoluteX="250dp"/>
+
+</android.support.constraint.ConstraintLayout>
